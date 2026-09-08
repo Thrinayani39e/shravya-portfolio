@@ -14,7 +14,6 @@ Bilingual (English / German) portfolio site for Shravya Achanala, M.Sc. Environm
 src/app/
 ├── components/          one folder per section, each with .ts / .html / .scss
 │   ├── navbar/
-│   ├── bird/             decorative mascot that "perches" near the section in view
 │   ├── hero/
 │   ├── about/
 │   ├── experience/
@@ -31,8 +30,7 @@ src/app/
 ├── services/
 │   ├── language.service.ts  active language (signal), persisted to localStorage
 │   ├── theme.service.ts     light/dark theme (signal), persisted to localStorage
-│   ├── navigation.service.ts  active section + mobile menu state, scroll spy
-│   └── bird.service.ts      perch position for the mascot animation
+│   └── navigation.service.ts  active section + mobile menu state, scroll spy
 ├── app.component.ts     assembles all section components in order
 └── app.component.html
 ```

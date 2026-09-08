@@ -32,7 +32,7 @@
 
 *, *::before, *::after { box-sizing: border-box; min-width: 0; }
 
-app-root, app-bird, app-hero, app-about, app-experience, app-education,
+app-root, app-hero, app-about, app-experience, app-education,
 app-publications, app-projects, app-leadership, app-skills, app-contact, app-footer {
   display: block;
 }
@@ -148,7 +148,7 @@ a {
 .placeholder-text { font-size: 12px; letter-spacing: .08em; color: var(--ink-60); text-align: center; padding: 12px; }
 
 @media print {
-  app-bird, app-navbar, .divider-motif { display: none !important; }
+  app-navbar, .divider-motif { display: none !important; }
   body { background: #fff; }
   section { break-inside: avoid; }
 }

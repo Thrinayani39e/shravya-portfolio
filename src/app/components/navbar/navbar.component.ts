@@ -5,7 +5,6 @@ import { Lang } from '../../data/portfolio.types';
 import { LanguageService } from '../../services/language.service';
 import { ThemeService } from '../../services/theme.service';
 import { NavigationService } from '../../services/navigation.service';
-import { BirdService } from '../../services/bird.service';
 
 @Component({
   selector: 'app-navbar',
@@ -17,7 +16,6 @@ import { BirdService } from '../../services/bird.service';
 export class NavbarComponent {
   private languageService = inject(LanguageService);
   private themeService = inject(ThemeService);
-  private bird = inject(BirdService);
   readonly nav = inject(NavigationService);
 
   readonly links = NAV_LINKS;
@@ -37,10 +35,5 @@ export class NavbarComponent {
   @HostListener('window:scroll')
   onScroll() {
     this.nav.spy();
-  }
-
-  @HostListener('window:resize')
-  onResize() {
-    this.bird.reperch();
   }
 }
