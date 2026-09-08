@@ -1,0 +1,33 @@
+<header>
+  <div class="header-rule"></div>
+  <div class="wrap header-inner">
+    <a href="#top" class="brand" (click)="nav.closeMenu()">
+      <span class="brand-name">Shravya Achanala</span>
+    </a>
+
+    <nav class="navlinks" [class.open]="nav.menuOpen()">
+      <a
+        *ngFor="let link of links; let i = index"
+        [href]="link.href"
+        [class.active]="nav.active() === link.href"
+        (click)="nav.navigate(link.href)"
+      >{{ navLabels()[i] }}</a>
+    </nav>
+
+    <div class="header-controls">
+      <div class="lang-switch">
+        <button type="button" [class.active]="lang() === 'en'" (click)="setLang('en')">EN</button>
+        <button type="button" [class.active]="lang() === 'de'" (click)="setLang('de')">DE</button>
+      </div>
+
+      <button type="button" class="icon-btn" [attr.aria-label]="content().themeLabel" [title]="content().themeLabel" (click)="toggleTheme()">
+        <svg *ngIf="theme() === 'dark'" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" /></svg>
+        <svg *ngIf="theme() !== 'dark'" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" /></svg>
+      </button>
+
+      <button type="button" class="icon-btn menu-btn" [attr.aria-label]="content().menuLabel" [attr.aria-expanded]="nav.menuOpen()" (click)="nav.toggleMenu()">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+      </button>
+    </div>
+  </div>
+</header>

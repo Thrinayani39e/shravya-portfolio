@@ -1,0 +1,26 @@
+.pub-list { margin: 0; padding: 0; list-style: none; max-width: 900px; }
+
+.pub-item {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 18px;
+  padding: 24px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.pub-n { font-family: var(--font-heading); font-size: 15px; color: var(--olive); font-variant-numeric: tabular-nums; padding-top: 4px; }
+
+.pub-meta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 9px; }
+.pub-kind { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; color: var(--paper); background: var(--olive-light); padding: 3px 9px; }
+.pub-venue { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; font-variant-numeric: tabular-nums; }
+.pub-title { font-family: var(--font-heading); font-size: 18px; line-height: 1.45; margin: 0 0 8px; color: var(--ink); max-width: 64ch; }
+.pub-detail { margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: var(--ink-60); max-width: 74ch; }
+.pub-doi { font-size: 13px; font-variant-numeric: tabular-nums; }
+
+.divider-motif {
+  opacity: .42;
+  color: var(--olive);
+  margin: 0 auto 60px;
+
+  svg { width: 100%; height: 84px; display: block; }
+}

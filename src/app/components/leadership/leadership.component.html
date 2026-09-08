@@ -1,0 +1,14 @@
+<section id="leadership" class="wrap content">
+  <div class="band"><span class="num">06</span><h2>{{ lead().band }}</h2></div>
+
+  <div class="lead-row stack" *ngFor="let l of lead().items">
+    <span class="row-date">{{ l.dates }}</span>
+    <div>
+      <h3>{{ l.role }}</h3>
+      <p class="row-org">{{ l.org }}</p>
+      <p class="row-note" *ngIf="l.note">{{ l.note }}</p>
+    </div>
+  </div>
+
+  <div class="hr"></div>
+</section>

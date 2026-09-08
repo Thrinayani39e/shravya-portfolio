@@ -1,0 +1,27 @@
+<div
+  class="bird"
+  aria-hidden="true"
+  [class.visible]="position()"
+  [class.flying]="flying()"
+  [style.transform]="'translateX(' + (position()?.x ?? 0) + 'px)'"
+>
+  <div class="bird-inner" [style.transform]="'translateY(' + (position()?.y ?? 0) + 'px)'">
+    <div
+      class="bird-tilt"
+      [style.transform]="'scaleX(' + (position()?.facing ?? 1) + ') rotate(' + (flying() ? (position()?.facing ?? 1) * -10 : 0) + 'deg)'"
+    >
+      <svg viewBox="0 0 48 40" width="42" height="35" style="position:absolute;inset:0">
+        <ellipse cx="24" cy="20" rx="23" ry="18.4" fill="var(--paper)" stroke="var(--olive)" stroke-width="1" opacity=".92" />
+      </svg>
+      <svg viewBox="0 0 48 40" width="42" height="35" style="position:relative" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <path class="legs" d="M20 30v6M25 30v6M18 36h4M23 36h4" />
+        <path d="M11 27C8 20 13 13 21 12c7-1 12 2 14 6 2 4-1 10-7 12-6 2-14 2-17-3Z" />
+        <path d="M11 27 2 31l4-8" />
+        <circle cx="33" cy="13" r="5.4" />
+        <path d="M38 13.6 45 15.4 38 17.4" />
+        <circle cx="34.4" cy="11.8" r=".9" fill="currentColor" stroke="none" />
+        <path class="wing" d="M16 22c4-4 10-4 14-1-4 4-10 4-14 1Z" />
+      </svg>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 44px; }
+
+.skills-group {
+  h3 { font-family: var(--font-body); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; color: var(--olive-dark); padding-bottom: 12px; border-bottom: 1px solid var(--olive); margin: 0 0 18px; }
+  ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 11px; }
+  li { font-family: var(--font-heading); font-size: 16px; line-height: 1.4; color: var(--ink); }
+}
+
+.langs-wrap {
+  margin-top: 52px;
+  padding-top: 26px;
+  border-top: 1px solid var(--rule);
+
+  > h3 { font-family: var(--font-body); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; color: var(--olive-dark); margin: 0 0 22px; }
+}
+
+.langs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; }
+
+.lang-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 9px;
+
+  .name { font-family: var(--font-heading); font-size: 17px; color: var(--ink); }
+  .level { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-60); font-weight: 600; }
+}
+
+.lang-track { height: 6px; background: var(--paper-2); border: 1px solid var(--rule); }
+.lang-fill { height: 100%; background: var(--olive); }

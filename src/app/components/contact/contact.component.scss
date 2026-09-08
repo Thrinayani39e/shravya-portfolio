@@ -1,0 +1,60 @@
+:host {
+  display: block;
+}
+
+section {
+  background: var(--olive);
+  color: var(--paper);
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.motif {
+  position: absolute;
+  right: -40px;
+  bottom: -70px;
+  width: min(430px, 46%);
+  opacity: .22;
+  pointer-events: none;
+  color: var(--paper);
+
+  svg { width: 100%; height: auto; display: block; }
+}
+
+.inner { position: relative; padding: 70px 28px 74px; }
+
+.inner .band {
+  border-bottom: 1px solid color-mix(in srgb, var(--paper) 34%, transparent);
+  padding: 0 0 14px;
+  margin: 0 0 44px;
+  background: transparent;
+}
+
+.contact-line {
+  font-family: var(--font-heading);
+  font-size: clamp(24px, 3.4vw, 36px);
+  line-height: 1.25;
+  margin: 0 0 46px;
+  max-width: 32ch;
+  color: var(--paper);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 34px;
+
+  dt { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; margin: 0 0 9px; color: var(--paper); }
+
+  a {
+    color: var(--paper);
+    border-bottom: 1px solid color-mix(in srgb, var(--paper) 45%, transparent);
+    font-family: var(--font-heading);
+    font-size: 17px;
+    line-height: 1.5;
+    word-break: break-word;
+
+    &:hover { border-bottom-color: var(--paper); color: var(--paper); }
+  }
+}

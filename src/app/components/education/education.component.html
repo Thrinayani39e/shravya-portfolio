@@ -1,0 +1,15 @@
+<section id="education" class="wrap content">
+  <div class="band"><span class="num">03</span><h2>{{ edu().band }}</h2></div>
+
+  <div class="edu-row stack" *ngFor="let ed of edu().items">
+    <span class="row-date">{{ ed.dates }}</span>
+    <div>
+      <h3>{{ ed.degree }}</h3>
+      <p class="row-org">{{ ed.school }}</p>
+      <p class="row-note">{{ ed.note }}</p>
+    </div>
+    <span class="row-grade">{{ ed.grade }}</span>
+  </div>
+
+  <div class="hr"></div>
+</section>

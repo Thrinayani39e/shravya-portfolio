@@ -1,0 +1,27 @@
+<section id="skills" class="wrap content">
+  <div class="band"><span class="num">07</span><h2>{{ skills().band }}</h2></div>
+
+  <div class="skills-grid">
+    <div class="skills-group" *ngFor="let g of skills().groups">
+      <h3>{{ g.title }}</h3>
+      <ul>
+        <li *ngFor="let s of g.items">{{ s }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="langs-wrap">
+    <h3>{{ skills().langTitle }}</h3>
+    <div class="langs-grid">
+      <div *ngFor="let ln of skills().langs">
+        <div class="lang-head">
+          <span class="name">{{ ln.name }}</span>
+          <span class="level">{{ ln.level }}</span>
+        </div>
+        <div class="lang-track">
+          <div class="lang-fill" [style.width]="ln.pct"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

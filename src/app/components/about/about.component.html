@@ -1,0 +1,50 @@
+<section id="about" class="wrap content">
+  <div class="band"><span class="num">01</span><h2>{{ about().band }}</h2></div>
+
+  <div class="about-grid stack">
+    <div>
+      <div class="portrait-frame">
+        <div class="portrait-box">
+          <img *ngIf="portraitFound()" [src]="portraitPath" alt="Portrait of Shravya Achanala" (error)="onPortraitError()" />
+          <span *ngIf="!portraitFound()" class="placeholder-text">{{ about().photoFallback }}</span>
+        </div>
+      </div>
+      <p class="portrait-caption">{{ about().caption }}</p>
+
+      <div class="botanical" aria-hidden="true">
+        <svg viewBox="0 0 260 92">
+          <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+            <path d="M6 86C50 82 96 66 130 44 162 24 206 12 252 10" />
+            <path d="M40 78C42 66 52 58 66 56M66 56C58 46 58 34 66 26" />
+            <path d="M96 64C96 52 106 42 120 40M120 40C112 30 112 18 120 10" />
+            <path d="M158 40C160 28 170 20 184 18M184 18C176 10 176 0 182-6" />
+            <path d="M212 20C214 10 224 4 236 4" />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div>
+      <div class="about-paras">
+        <p *ngFor="let p of about().paras">{{ p }}</p>
+      </div>
+
+      <div class="about-ctas">
+        <a
+          [href]="cvFound() ? cvPath() : null"
+          [download]="cvFound() ? true : null"
+          class="btn btn-solid"
+          [class.disabled]="!cvFound()"
+        >{{ cvFound() ? about().cv : about().cvUnavailable }}</a>
+        <a [href]="'mailto:' + owner.universityEmail" class="btn">{{ about().touch }}</a>
+      </div>
+
+      <dl class="facts">
+        <div *ngFor="let f of about().facts">
+          <dt>{{ f.k }}</dt>
+          <dd>{{ f.v }}</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>

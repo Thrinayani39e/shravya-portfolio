@@ -1,0 +1,52 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.portrait-frame { padding: 10px; background: var(--surface); border: 1px solid var(--rule); }
+
+.portrait-box {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: var(--paper-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img { width: 100%; height: 100%; object-fit: cover; display: block; }
+}
+
+.portrait-caption { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-60); margin: 12px 2px 0; font-weight: 500; }
+
+.botanical {
+  margin: 26px 2px 0;
+  opacity: .42;
+  color: var(--olive);
+  svg { width: 100%; max-width: 260px; height: auto; display: block; }
+}
+
+.about-paras p {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  line-height: 1.62;
+  color: var(--ink);
+  margin: 0 0 20px;
+  max-width: 64ch;
+}
+
+.about-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 22px;
+  margin: 44px 0 0;
+  padding-top: 26px;
+  border-top: 1px solid var(--rule);
+
+  dt { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--olive-dark); font-weight: 600; margin-bottom: 7px; }
+  dd { margin: 0; font-family: var(--font-heading); font-size: 15px; line-height: 1.4; color: var(--ink); }
+}

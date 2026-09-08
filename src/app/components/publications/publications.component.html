@@ -1,0 +1,39 @@
+<section id="publications" class="wrap content">
+  <div class="band"><span class="num">04</span><h2>{{ pubs().band }}</h2></div>
+
+  <ol class="pub-list">
+    <li class="pub-item" *ngFor="let pub of pubs().items">
+      <span class="pub-n">{{ pub.n }}</span>
+      <div>
+        <div class="pub-meta">
+          <span class="pub-kind">{{ pub.kind }}</span>
+          <span class="pub-venue">{{ pub.venue }}</span>
+        </div>
+        <p class="pub-title">{{ pub.title }}</p>
+        <p class="pub-detail">{{ pub.detail }}</p>
+        <a *ngIf="pub.href" class="pub-doi" [href]="pub.href" target="_blank" rel="noopener">{{ pub.doi }}</a>
+      </div>
+    </li>
+  </ol>
+
+  <div class="hr"></div>
+</section>
+
+<div class="divider-motif wrap" aria-hidden="true">
+  <svg viewBox="0 0 1064 84" preserveAspectRatio="none">
+    <g fill="none" stroke="currentColor" stroke-width="1">
+      <path d="M0 42H1064" stroke="currentColor" opacity=".5" />
+      <g transform="translate(64,42)"><circle r="15" /><path d="M0-15V0M-15 0H0M-11-11 0 0M11-11 0 0" /></g>
+      <g transform="translate(150,42)"><circle r="22" /><circle r="5" /><path d="M0-22V-9M-22 0H-9M9 0H22M0 9V22M-16-16 -7-7M16 16 7 7" /></g>
+      <g transform="translate(246,42)"><circle r="12" /><circle r="3" /><path d="M0-12V-5M0 5V12M-12 0H-5M5 0H12" /></g>
+      <g transform="translate(330,42)"><circle r="26" /><circle r="6" /><path d="M0-26V-11M0 11V26M-26 0H-11M11 0H26M-18-18 -8-8M18 18 8 8M18-18 8-8M-18 18 -8 8" /></g>
+      <g transform="translate(444,42)"><circle r="16" /><path d="M0-16V0M16 0H0M11 11 0 0M-11 11 0 0" /></g>
+      <g transform="translate(540,42)"><circle r="20" /><circle r="5" /><path d="M0-20V-9M0 9V20M-20 0H-9M9 0H20M-14-14 -6-6M14-14 6-6" /></g>
+      <g transform="translate(636,42)"><circle r="30" /><circle r="7" /><path d="M0-30V-14M0 14V30M-30 0H-14M14 0H30M-21-21 -10-10M21 21 10 10M21-21 10-10M-21 21 -10 10" /></g>
+      <g transform="translate(748,42)"><circle r="13" /><circle r="3" /><path d="M0-13V-5M-13 0H-5M5 0H13" /></g>
+      <g transform="translate(838,42)"><circle r="24" /><circle r="6" /><path d="M0-24V-11M0 11V24M-24 0H-11M11 0H24M-17 17 -8 8M17-17 8-8" /></g>
+      <g transform="translate(940,42)"><circle r="17" /><circle r="4" /><path d="M0-17V-7M0 7V17M-17 0H-7M7 0H17" /></g>
+      <g transform="translate(1024,42)"><circle r="11" /><path d="M0-11V0M-11 0H0M8 8 0 0" /></g>
+    </g>
+  </svg>
+</div>

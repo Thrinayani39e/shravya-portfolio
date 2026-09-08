@@ -1,0 +1,27 @@
+<section id="projects" class="wrap content">
+  <div class="band"><span class="num">05</span><h2>{{ projects().band }}</h2></div>
+  <p class="projects-note">{{ projects().note }}</p>
+
+  <div class="project-grid">
+    <article class="project-card" *ngFor="let pr of projects().items">
+      <div class="project-img-wrap">
+        <div class="project-img">
+          <img *ngIf="!isMissing(pr.slot)" [src]="imagePath(pr.slot)" [alt]="pr.title" (error)="onImageError(pr.slot)" />
+          <span *ngIf="isMissing(pr.slot)" class="placeholder-text">{{ projects().imgFallback }}</span>
+        </div>
+      </div>
+
+      <div class="project-body">
+        <div class="project-status">
+          <span class="line"></span>
+          <span class="label">{{ pr.status }}</span>
+        </div>
+        <h3>{{ pr.title }}</h3>
+        <p class="project-desc">{{ pr.desc }}</p>
+        <div class="project-tags">
+          <span *ngFor="let tag of pr.tags">{{ tag }}</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
