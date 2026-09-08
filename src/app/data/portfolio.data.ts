@@ -49,7 +49,7 @@ const EN: PortfolioContent = {
     cta2: 'See experience'
   },
   about: {
-    band: 'Über mich · About',
+    band: 'About',
     caption: 'Berlin, 2026',
     photoFallback: 'Portrait coming soon',
     paras: [
@@ -67,7 +67,7 @@ const EN: PortfolioContent = {
     touch: 'Get in touch'
   },
   exp: {
-    band: 'Berufserfahrung · Experience',
+    band: 'Experience',
     items: [
       {
         role: 'Student Assistant',
@@ -114,7 +114,7 @@ const EN: PortfolioContent = {
     ]
   },
   edu: {
-    band: 'Ausbildung · Education',
+    band: 'Education',
     items: [
       {
         dates: 'Oct 2025–present',
@@ -140,7 +140,7 @@ const EN: PortfolioContent = {
     ]
   },
   pubs: {
-    band: 'Publikationen · Publications & Conference',
+    band: 'Publications & Conference',
     items: [
       {
         n: '01',
@@ -181,7 +181,7 @@ const EN: PortfolioContent = {
     ]
   },
   projects: {
-    band: 'Projekte · Projects',
+    band: 'Projects',
     note: 'Selected academic and competition work from the Bachelor of Planning, spanning participatory regeneration, climate-resilient coastal planning, regional transportation and citywide slum upgrading.',
     imgFallback: 'Image coming soon',
     items: [
@@ -216,7 +216,7 @@ const EN: PortfolioContent = {
     ]
   },
   lead: {
-    band: 'Engagement · Leadership & Volunteering',
+    band: 'Leadership & Volunteering',
     items: [
       {
         dates: 'Since Aug 2026',
@@ -236,7 +236,7 @@ const EN: PortfolioContent = {
     ]
   },
   skills: {
-    band: 'Kenntnisse · Skills',
+    band: 'Skills',
     groups: [
       { title: 'GIS / Geospatial', items: ['ArcGIS Pro', 'QGIS', 'Google Earth Engine'] },
       {
@@ -253,7 +253,7 @@ const EN: PortfolioContent = {
     ]
   },
   contact: {
-    band: 'Kontakt · Contact',
+    band: 'Contact',
     line: 'Open to planning practice, research and collaboration in Berlin and beyond.',
     items: [
       { k: 'University email', v: OWNER.universityEmail, href: `mailto:${OWNER.universityEmail}` },

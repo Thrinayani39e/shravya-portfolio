@@ -30,7 +30,7 @@ export class NavigationService {
     this.menuOpen.set(false);
   }
 
-  /** Called on scroll: updates the active section for the nav underline, without moving the bird. */
+  /** Called on scroll: updates the active section for the nav underline and flies the bird along with it. */
   spy() {
     if (typeof document === 'undefined') return;
     let active = '#top';
@@ -38,6 +38,15 @@ export class NavigationService {
       const el = document.querySelector(href);
       if (el && el.getBoundingClientRect().top <= SCROLL_OFFSET) active = href;
     }
-    if (active !== this.active()) this.active.set(active);
+    // The last section can be shorter than the viewport, so its top may never cross
+    // SCROLL_OFFSET even when fully scrolled into view — treat "at the bottom of the
+    // page" as being on the last section instead.
+    const scrolledToBottom =
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    if (scrolledToBottom) active = this.hrefs[this.hrefs.length - 1];
+    if (active !== this.active()) {
+      this.active.set(active);
+      this.bird.flyTo(active, true);
+    }
   }
 }

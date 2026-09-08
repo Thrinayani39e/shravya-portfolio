@@ -9,9 +9,10 @@
   pointer-events: none;
   color: var(--olive);
   opacity: 0;
-  transition: transform 1.5s cubic-bezier(.36, .05, .28, 1), opacity .5s;
+  transition: transform 1.5s cubic-bezier(.36, .05, .28, 1), opacity .5s, color .4s;
 
   &.visible { opacity: .95; }
+  &.on-dark { color: #fff; }
 }
 
 .bird-inner { transition: transform 1.5s cubic-bezier(.3, -.35, .35, 1); }

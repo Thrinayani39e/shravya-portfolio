@@ -32,16 +32,24 @@
 
 *, *::before, *::after { box-sizing: border-box; min-width: 0; }
 
+app-root, app-bird, app-hero, app-about, app-experience, app-education,
+app-publications, app-projects, app-leadership, app-skills, app-contact, app-footer {
+  display: block;
+}
+
+/* Must not create its own box: a wrapper that exactly hugs <header>'s height would
+   collapse position:sticky's valid stick range to zero. This keeps header's
+   containing block as the full-height app-root instead. */
+app-navbar { display: contents; }
+
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   width: 100%;
 }
 section[id] { scroll-margin-top: 96px; }
 
 body {
   margin: 0;
-  overflow-x: hidden;
   width: 100%;
   background: var(--paper);
   color: var(--ink);
