@@ -1,18 +1,35 @@
 # Shravya Achanala — Portfolio
 
-Bilingual (English / German) portfolio site for Shravya Achanala, M.Sc. Environmental Planning student at TU Berlin. Built with Angular 17 as standalone components.
+Bilingual (English / German) portfolio site for Shravya Achanala, M.Sc. Environmental Planning student at TU Berlin. Built with Angular 17 as standalone components, with routed pages rather than one long scroll.
 
 ## Stack
 
 - **Angular 17** — standalone components, signals for state (no NgModules, no RxJS needed)
+- **Angular Router** — each top-level page is its own lazy-loaded route
 - **SCSS**, using CSS custom properties for the olive/paper color palette and light/dark theming
 - No backend — all content lives in typed data files and is bundled at build time
+
+## Pages
+
+| Route | Content |
+|---|---|
+| `/` | Hero + About |
+| `/experience` | Experience + Education |
+| `/projects` | Publications + Projects |
+| `/engagement` | Leadership + Skills |
+| `/contact` | Contact |
 
 ## Project structure
 
 ```
 src/app/
-├── components/          one folder per section, each with .ts / .html / .scss
+├── pages/                one route per page, each just composes section components
+│   ├── home/
+│   ├── experience/
+│   ├── projects/
+│   ├── engagement/
+│   └── contact/
+├── components/            one folder per section, each with .ts / .html / .scss
 │   ├── navbar/
 │   ├── hero/
 │   ├── about/
@@ -30,12 +47,15 @@ src/app/
 ├── services/
 │   ├── language.service.ts  active language (signal), persisted to localStorage
 │   ├── theme.service.ts     light/dark theme (signal), persisted to localStorage
-│   └── navigation.service.ts  active section + mobile menu state, scroll spy
-├── app.component.ts     assembles all section components in order
+│   └── navigation.service.ts  mobile nav drawer open/closed state
+├── app.routes.ts         route → page component mapping
+├── app.component.ts      persistent navbar + footer around <router-outlet>, sets document.title per route + language
 └── app.component.html
 ```
 
-Each component injects `LanguageService` and reads its slice of content reactively — switching the EN/DE toggle in the navbar re-renders every section immediately, no page reload.
+Each component injects `LanguageService` and reads its slice of content reactively — switching the EN/DE toggle in the navbar re-renders every page immediately, no reload.
+
+Deploying to a static host requires an SPA fallback rule so deep links like `/experience` don't 404 on refresh — already configured in `netlify.toml` and `vercel.json`.
 
 ## Updating content
 

@@ -8,20 +8,19 @@ export const OWNER = {
   linkedin: 'https://www.linkedin.com/in/shravya-achanala-861039217/'
 };
 
+/** One entry per routed page. Grouping keeps each page substantial rather than
+ *  one section per page: Experience pairs with Education, Projects with
+ *  Publications, Engagement with Skills. */
 export const NAV_LINKS: NavLink[] = [
-  { id: 'about', href: '#about' },
-  { id: 'experience', href: '#experience' },
-  { id: 'education', href: '#education' },
-  { id: 'publications', href: '#publications' },
-  { id: 'projects', href: '#projects' },
-  { id: 'leadership', href: '#leadership' },
-  { id: 'skills', href: '#skills' },
-  { id: 'contact', href: '#contact' }
+  { id: 'experience', path: '/experience' },
+  { id: 'projects', path: '/projects' },
+  { id: 'engagement', path: '/engagement' },
+  { id: 'contact', path: '/contact' }
 ];
 
 export const NAV_LABELS: Record<Lang, string[]> = {
-  en: ['About', 'Experience', 'Education', 'Publications', 'Projects', 'Leadership', 'Skills', 'Contact'],
-  de: ['Über mich', 'Erfahrung', 'Ausbildung', 'Publikationen', 'Projekte', 'Engagement', 'Kenntnisse', 'Kontakt']
+  en: ['Experience', 'Projects', 'Engagement', 'Contact'],
+  de: ['Erfahrung', 'Projekte', 'Engagement', 'Kontakt']
 };
 
 export const TIMELINE_YEARS = [2022, 2023, 2024, 2025, 2026];

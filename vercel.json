@@ -1,4 +1,5 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/shravya-portfolio/browser"
+  "outputDirectory": "dist/shravya-portfolio/browser",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
