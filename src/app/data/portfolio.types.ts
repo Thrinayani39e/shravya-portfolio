@@ -3,7 +3,7 @@ export type Theme = 'light' | 'dark';
 
 export interface NavLink {
   id: string;
-  path: string;
+  href: string;
 }
 
 export interface Fact {

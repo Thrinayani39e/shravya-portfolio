@@ -32,10 +32,8 @@
 
 *, *::before, *::after { box-sizing: border-box; min-width: 0; }
 
-app-root, app-footer,
-app-home-page, app-experience-page, app-projects-page, app-engagement-page, app-contact-page,
-app-hero, app-about, app-experience, app-education,
-app-publications, app-projects, app-leadership, app-skills, app-contact {
+app-root, app-hero, app-about, app-experience, app-education,
+app-publications, app-projects, app-leadership, app-skills, app-contact, app-footer {
   display: block;
 }
 

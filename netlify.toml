@@ -4,10 +4,3 @@
 
 [build.environment]
   NODE_VERSION = "20"
-
-# Client-side routing: let Angular's router handle every path instead of
-# 404ing when a non-root route (e.g. /experience) is loaded or refreshed directly.
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200

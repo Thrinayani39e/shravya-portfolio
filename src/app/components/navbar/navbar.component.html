@@ -1,16 +1,16 @@
 <header>
   <div class="header-rule"></div>
   <div class="wrap header-inner">
-    <a routerLink="/" class="brand" (click)="nav.closeMenu()">
+    <a href="#top" class="brand" (click)="nav.closeMenu()">
       <span class="brand-name">Shravya Achanala</span>
     </a>
 
     <nav class="navlinks" [class.open]="nav.menuOpen()">
       <a
         *ngFor="let link of links; let i = index"
-        [routerLink]="link.path"
-        routerLinkActive="active"
-        (click)="nav.closeMenu()"
+        [href]="link.href"
+        [class.active]="nav.active() === link.href"
+        (click)="nav.navigate(link.href)"
       >{{ navLabels()[i] }}</a>
     </nav>
 

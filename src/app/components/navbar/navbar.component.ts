@@ -1,6 +1,5 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NAV_LINKS } from '../../data/portfolio.data';
 import { Lang } from '../../data/portfolio.types';
 import { LanguageService } from '../../services/language.service';
@@ -10,7 +9,7 @@ import { NavigationService } from '../../services/navigation.service';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive],
+  imports: [CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -31,5 +30,10 @@ export class NavbarComponent {
 
   toggleTheme() {
     this.themeService.toggle();
+  }
+
+  @HostListener('window:scroll')
+  onScroll() {
+    this.nav.spy();
   }
 }
