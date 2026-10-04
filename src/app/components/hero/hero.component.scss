@@ -39,23 +39,15 @@ section {
   max-width: 16ch;
 }
 
-.hero-band { height: 1px; background: var(--rule); max-width: 640px; margin: 0 0 22px; }
-
-.hero-subtitle {
-  font-family: var(--font-heading);
-  font-size: clamp(19px, 2.2vw, 24px);
-  line-height: 1.35;
-  color: var(--ink);
-  margin: 0 0 14px;
-  max-width: 34ch;
-}
+.hero-band { height: 1px; background: var(--rule); max-width: 640px; margin: 0 0 26px; }
 
 .hero-tagline {
-  font-size: 16px;
-  line-height: 1.65;
-  color: var(--ink-60);
-  margin: 0 0 38px;
-  max-width: 52ch;
+  font-family: var(--font-heading);
+  font-size: clamp(19px, 2.4vw, 26px);
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0 0 40px;
+  max-width: 40ch;
 }
 
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }

@@ -42,6 +42,8 @@ export interface EducationItem {
   school: string;
   note: string;
   grade: string;
+  /** Optional smaller secondary line under the grade, e.g. a German-system equivalent. */
+  gradeNote?: string;
 }
 
 export interface EducationContent {
@@ -123,7 +125,6 @@ export interface ContactContent {
 
 export interface HeroContent {
   eyebrow: string;
-  title: string;
   tagline: string;
   cta1: string;
   cta2: string;

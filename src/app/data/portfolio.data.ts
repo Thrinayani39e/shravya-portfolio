@@ -42,9 +42,7 @@ const EN: PortfolioContent = {
   footer: 'M.Sc. Environmental Planning · TU Berlin',
   hero: {
     eyebrow: '52.5170° N · 13.3889° E · Berlin',
-    title: 'M.Sc. Environmental Planning, Technische Universität Berlin',
-    tagline:
-      'Urban and regional planner working across GIS analysis, participatory urban development and climate adaptation, with one question underneath all of it: what makes a city healthy and livable for the people already living in it?',
+    tagline: 'Urban and Regional Planner, shaping cities that work for the people already living in them.',
     cta1: 'Get in touch',
     cta2: 'See experience'
   },
@@ -53,9 +51,9 @@ const EN: PortfolioContent = {
     caption: 'Berlin, 2026',
     photoFallback: 'Portrait coming soon',
     paras: [
-      'I am an urban and regional planner working at the intersection of spatial analysis and public participation. My training spans land-use planning, GIS analysis, participatory urban development and climate adaptation.',
-      'Currently I am a student assistant at the Institute of Urban and Regional Planning at TU Berlin, where I am completing an M.Sc. in Environmental Planning. Before Berlin I digitized planning and zoning regulation for jurisdictions across the United States and Australia, and built parcel-level GIS layers for land use and planning requirements.',
-      "My Bachelor's thesis took a participative approach to inner-city regeneration in Anantapur, India. I continue this work as a conference paper on community participation in regeneration processes."
+      'I am an Urban and Regional Planner, currently pursuing my M.Sc. in Environmental Planning at TU Berlin. My interests lie in spatial analysis, neighbourhood development and public participation, with a study focus spanning land-use planning, GIS analysis, participatory urban development and climate adaptation.',
+      'Alongside my studies, I work as a student assistant at the Institute of Urban and Regional Planning at TU Berlin. Before moving to Germany, I worked as a GIS analyst digitizing planning and zoning regulations across the US and Australia.',
+      "I moved to Germany in April 2025 and have been practicing my German ever since, working in restaurants, trying language tandems, and volunteering (you can read more about that further down this page). I'm highly motivated and a quick learner."
     ],
     facts: [
       { k: 'Based in', v: 'Berlin, Germany' },
@@ -135,7 +133,8 @@ const EN: PortfolioContent = {
         degree: 'Bachelor of Planning (Urban and Regional Planning)',
         school: 'School of Planning and Architecture, Vijayawada, India',
         note: 'Silver medalist, 2nd rank. Thesis: “A Participative Approach toward Inner City Regeneration: A Case Study of Anantapur Municipal Corporation”.',
-        grade: '9.08 / 10 (≈ 1.4, German grading system)'
+        grade: '9.08 / 10',
+        gradeNote: '≈ 1.4 (German system)'
       }
     ]
   },
@@ -276,9 +275,7 @@ const DE: PortfolioContent = {
   footer: 'M.Sc. Umweltplanung · TU Berlin',
   hero: {
     eyebrow: '52.5170° N · 13.3889° O · Berlin',
-    title: 'M.Sc. Umweltplanung, Technische Universität Berlin',
-    tagline:
-      'Stadt- und Regionalplanerin mit Schwerpunkten in GIS-Analyse, partizipativer Stadtentwicklung und Klimaanpassung, mit einer Frage im Hintergrund: Was macht eine Stadt für die Menschen, die schon dort leben, gesund und lebenswert?',
+    tagline: 'Stadt- und Regionalplanerin, die Städte mitgestaltet, die für die Menschen funktionieren, die schon dort leben.',
     cta1: 'Kontakt aufnehmen',
     cta2: 'Erfahrung ansehen'
   },
@@ -287,9 +284,9 @@ const DE: PortfolioContent = {
     caption: 'Berlin, 2026',
     photoFallback: 'Porträt folgt in Kürze',
     paras: [
-      'Ich bin Stadt- und Regionalplanerin und arbeite an der Schnittstelle von räumlicher Analyse und Bürgerbeteiligung. Meine Ausbildung umfasst Flächennutzungsplanung, GIS-Analyse, partizipative Stadtentwicklung und Klimaanpassung.',
-      'Derzeit bin ich studentische Mitarbeiterin am Institut für Stadt- und Regionalplanung der TU Berlin und absolviere dort meinen M.Sc. Umweltplanung. Vor Berlin habe ich Planungs- und Baunutzungsvorschriften für Kommunen in den USA und Australien digitalisiert und GIS-Layer auf Flurstücksebene für Flächennutzung und Planungsanforderungen aufgebaut.',
-      'Meine Bachelorarbeit verfolgte einen partizipativen Ansatz zur Innenstadterneuerung in Anantapur, Indien. Diese Arbeit führe ich als Konferenzbeitrag zur Bürgerbeteiligung in Erneuerungsprozessen weiter.'
+      'Ich bin Stadt- und Regionalplanerin und studiere derzeit meinen M.Sc. in Umweltplanung an der TU Berlin. Meine Interessen liegen in der räumlichen Analyse, der Nachbarschaftsentwicklung und der Bürgerbeteiligung, mit einem Studienschwerpunkt auf Flächennutzungsplanung, GIS-Analyse, partizipativer Stadtentwicklung und Klimaanpassung.',
+      'Neben dem Studium arbeite ich als studentische Mitarbeiterin am Institut für Stadt- und Regionalplanung der TU Berlin. Vor meinem Umzug nach Deutschland war ich als GIS-Analystin tätig und digitalisierte Planungs- und Baunutzungsvorschriften in den USA und Australien.',
+      'Ich bin im April 2025 nach Deutschland gezogen und übe seitdem mein Deutsch, unter anderem durch Arbeit in der Gastronomie, Sprachtandems und ehrenamtliches Engagement (mehr dazu weiter unten auf dieser Seite). Ich bin hochmotiviert und lerne schnell.'
     ],
     facts: [
       { k: 'Standort', v: 'Berlin, Deutschland' },
@@ -369,7 +366,8 @@ const DE: PortfolioContent = {
         degree: 'Bachelor of Planning (Stadt- und Regionalplanung)',
         school: 'School of Planning and Architecture, Vijayawada, Indien',
         note: 'Silbermedaille, 2. Platz des Jahrgangs. Abschlussarbeit: „A Participative Approach toward Inner City Regeneration: A Case Study of Anantapur Municipal Corporation“.',
-        grade: '9,08 / 10 (≈ 1,4 im deutschen Notensystem)'
+        grade: '9,08 / 10',
+        gradeNote: '≈ 1,4 (deutsches System)'
       }
     ]
   },

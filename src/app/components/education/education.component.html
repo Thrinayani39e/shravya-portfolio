@@ -8,7 +8,10 @@
       <p class="row-org">{{ ed.school }}</p>
       <p class="row-note">{{ ed.note }}</p>
     </div>
-    <span class="row-grade">{{ ed.grade }}</span>
+    <span class="row-grade">
+      {{ ed.grade }}
+      <span *ngIf="ed.gradeNote" class="grade-note">{{ ed.gradeNote }}</span>
+    </span>
   </div>
 
   <div class="hr"></div>
