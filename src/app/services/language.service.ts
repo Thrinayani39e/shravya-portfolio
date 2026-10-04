@@ -26,7 +26,7 @@ export class LanguageService {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved === 'en' || saved === 'de') return saved;
     } catch { /* storage unavailable */ }
-    return 'en';
+    return 'de';
   }
 
   private applyDocumentLang(lang: Lang) {
