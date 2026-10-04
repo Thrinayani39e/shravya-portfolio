@@ -5,7 +5,7 @@ export const OWNER = {
   location: 'Berlin, Germany',
   universityEmail: 'achanala@tu-berlin.de',
   personalEmail: 'sachanala24@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/shravyaachanala-861039217/'
+  linkedin: 'https://www.linkedin.com/in/shravya-achanala-861039217/'
 };
 
 export const NAV_LINKS: NavLink[] = [
@@ -264,7 +264,7 @@ const EN: PortfolioContent = {
     items: [
       { k: 'University email', v: OWNER.universityEmail, href: `mailto:${OWNER.universityEmail}` },
       { k: 'Personal email', v: OWNER.personalEmail, href: `mailto:${OWNER.personalEmail}` },
-      { k: 'LinkedIn', v: 'linkedin.com/in/shravyaachanala-861039217', href: OWNER.linkedin }
+      { k: 'LinkedIn', v: 'linkedin.com/in/shravya-achanala-861039217', href: OWNER.linkedin }
     ]
   }
 };
@@ -498,7 +498,7 @@ const DE: PortfolioContent = {
     items: [
       { k: 'Universitäts-E-Mail', v: OWNER.universityEmail, href: `mailto:${OWNER.universityEmail}` },
       { k: 'Persönliche E-Mail', v: OWNER.personalEmail, href: `mailto:${OWNER.personalEmail}` },
-      { k: 'LinkedIn', v: 'linkedin.com/in/shravyaachanala-861039217', href: OWNER.linkedin }
+      { k: 'LinkedIn', v: 'linkedin.com/in/shravya-achanala-861039217', href: OWNER.linkedin }
     ]
   }
 };
