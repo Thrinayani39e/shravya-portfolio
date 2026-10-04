@@ -127,7 +127,7 @@ const EN: PortfolioContent = {
         dates: 'Apr–Sep 2025',
         degree: 'M.Sc. Environmental Planning and Territorial Development',
         school: 'Leibniz Universität Hannover',
-        note: 'One semester completed before transferring to TU Berlin.',
+        note: 'Studied one semester here before transferring to TU Berlin.',
         grade: 'GPA 1.7'
       },
       {
@@ -135,7 +135,7 @@ const EN: PortfolioContent = {
         degree: 'Bachelor of Planning (Urban and Regional Planning)',
         school: 'School of Planning and Architecture, Vijayawada, India',
         note: 'Silver medalist, 2nd rank. Thesis: “A Participative Approach toward Inner City Regeneration: A Case Study of Anantapur Municipal Corporation”.',
-        grade: '9.08 / 10'
+        grade: '9.08 / 10 (≈ 1.4, German grading system)'
       }
     ]
   },
@@ -171,7 +171,7 @@ const EN: PortfolioContent = {
       },
       {
         n: '04',
-        kind: 'Conference talk',
+        kind: 'Presentation',
         venue: 'Sapienza University of Rome · 25–27 Nov 2025',
         title: 'Community Participation in Inner City Regeneration',
         detail: 'Presented at the 6th URS Conference on urban regeneration and sustainability.',
@@ -219,6 +219,12 @@ const EN: PortfolioContent = {
     band: 'Leadership & Volunteering',
     items: [
       {
+        dates: 'Since Sept 2026',
+        role: 'Volunteer Event Support: Senior Social Afternoon',
+        org: 'Die Freiwilligen im Unionhilfswerk, Charlottenburg-Wilmersdorf, Berlin',
+        note: 'I support a monthly social afternoon for older adults with coffee, cake and dancing. My tasks include helping with the event setup, serving refreshments, welcoming participants and spending time in friendly conversation with them.'
+      },
+      {
         dates: 'Since Aug 2026',
         role: 'Weekly visiting companion',
         org: 'Evangelisches Johannastift, Berlin (LeNa project)',
@@ -241,7 +247,7 @@ const EN: PortfolioContent = {
       { title: 'GIS / Geospatial', items: ['ArcGIS Pro', 'QGIS', 'Google Earth Engine'] },
       {
         title: 'Data & planning analysis',
-        items: ['MS Office', 'Google Sheets / Docs', 'TestFit', 'Ebsilon', 'DEEP (Desalination Economic Evaluation Program)', 'Basic R']
+        items: ['MS Office', 'Google Sheets / Docs', 'TestFit', 'Ebsilon', 'DEEP (Desalination Economic Evaluation Program)']
       },
       { title: 'Presentation & visualization', items: ['MS PowerPoint', 'Canva', 'Miro Board'] }
     ],
@@ -254,7 +260,7 @@ const EN: PortfolioContent = {
   },
   contact: {
     band: 'Contact',
-    line: 'Open to planning practice, research and collaboration in Berlin and beyond.',
+    line: 'Open to working at planning offices, research and collaboration in Berlin and beyond.',
     items: [
       { k: 'University email', v: OWNER.universityEmail, href: `mailto:${OWNER.universityEmail}` },
       { k: 'Personal email', v: OWNER.personalEmail, href: `mailto:${OWNER.personalEmail}` },
@@ -355,7 +361,7 @@ const DE: PortfolioContent = {
         dates: 'Apr.–Sep. 2025',
         degree: 'M.Sc. Umweltplanung und Raumentwicklung',
         school: 'Leibniz Universität Hannover',
-        note: 'Ein Semester absolviert, anschließend Wechsel an die TU Berlin.',
+        note: 'Ein Semester hier studiert, bevor ich an die TU Berlin gewechselt bin.',
         grade: 'Note 1,7'
       },
       {
@@ -363,7 +369,7 @@ const DE: PortfolioContent = {
         degree: 'Bachelor of Planning (Stadt- und Regionalplanung)',
         school: 'School of Planning and Architecture, Vijayawada, Indien',
         note: 'Silbermedaille, 2. Platz des Jahrgangs. Abschlussarbeit: „A Participative Approach toward Inner City Regeneration: A Case Study of Anantapur Municipal Corporation“.',
-        grade: '9,08 / 10'
+        grade: '9,08 / 10 (≈ 1,4 im deutschen Notensystem)'
       }
     ]
   },
@@ -399,7 +405,7 @@ const DE: PortfolioContent = {
       },
       {
         n: '04',
-        kind: 'Konferenzvortrag',
+        kind: 'Präsentation',
         venue: 'Sapienza Universität Rom · 25.–27. Nov. 2025',
         title: 'Bürgerbeteiligung in der Innenstadterneuerung',
         detail: 'Vortrag auf der 6. URS-Konferenz zu Stadterneuerung und Nachhaltigkeit.',
@@ -447,6 +453,12 @@ const DE: PortfolioContent = {
     band: 'Engagement & Ehrenamt',
     items: [
       {
+        dates: 'Seit Sept. 2026',
+        role: 'Ehrenamtliche Unterstützung bei Seniorennachmittagen',
+        org: 'Die Freiwilligen im Unionhilfswerk, Charlottenburg-Wilmersdorf, Berlin',
+        note: 'Ich unterstütze einmal im Monat einen geselligen Seniorennachmittag mit Kaffee, Kuchen und Tanz. Zu meinen Aufgaben gehören die Vor- und Nachbereitung der Räumlichkeiten, das Servieren von Getränken und Kuchen, die Begrüßung der Teilnehmenden sowie persönliche Gespräche mit älteren Menschen.'
+      },
+      {
         dates: 'Seit Aug. 2026',
         role: 'Wöchentliche Besuchsbegleitung',
         org: 'Evangelisches Johannastift, Berlin (Projekt LeNa)',
@@ -469,7 +481,7 @@ const DE: PortfolioContent = {
       { title: 'GIS / Geodaten', items: ['ArcGIS Pro', 'QGIS', 'Google Earth Engine'] },
       {
         title: 'Daten- & Planungsanalyse',
-        items: ['MS Office', 'Google Sheets / Docs', 'TestFit', 'Ebsilon', 'DEEP (Desalination Economic Evaluation Program)', 'Grundkenntnisse R']
+        items: ['MS Office', 'Google Sheets / Docs', 'TestFit', 'Ebsilon', 'DEEP (Desalination Economic Evaluation Program)']
       },
       { title: 'Präsentation & Visualisierung', items: ['MS PowerPoint', 'Canva', 'Miro Board'] }
     ],
@@ -482,7 +494,7 @@ const DE: PortfolioContent = {
   },
   contact: {
     band: 'Kontakt',
-    line: 'Offen für Planungspraxis, Forschung und Zusammenarbeit, in Berlin und darüber hinaus.',
+    line: 'Offen für eine Tätigkeit in Planungsbüros, Forschung und Zusammenarbeit, in Berlin und darüber hinaus.',
     items: [
       { k: 'Universitäts-E-Mail', v: OWNER.universityEmail, href: `mailto:${OWNER.universityEmail}` },
       { k: 'Persönliche E-Mail', v: OWNER.personalEmail, href: `mailto:${OWNER.personalEmail}` },
